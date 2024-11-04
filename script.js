@@ -30,15 +30,15 @@ const questions = [
       ]
     },
     {
-      question: "What does CSS stand for?",
-      answers: [
-        { text: "Central Style Sheets", correct: false },
-        { text: "Cascading Style Sheets", correct: true },
-        { text: "Cascading Simple Sheets", correct: false },
-        { text: "Cars SUVs Sailboats", correct: false }
-      ]
-    }
-  ];
+        question: "What does CSS stand for?",
+        answers: [
+          { text: "Central Style Sheets", correct: false },
+          { text: "Cascading Style Sheets", correct: true },
+          { text: "Cascading Simple Sheets", correct: false },
+          { text: "Cars SUVs Sailboats", correct: false }
+        ]
+      }
+    ];
 
 startButton.addEventListener('click', startQuiz);
 nextButton.addEventListener('click', () => {
@@ -62,3 +62,4 @@ function setNextQuestion() {
     resetState();
     showQuestion(shuffledQuestions[currentQuestionIndex]);
 }
+
