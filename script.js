@@ -77,4 +77,9 @@ function showQuestion(question) {
     });
   }
 
-  
+  function resetState() {
+    nextButton.classList.add('hide');
+    while (answerButtons.firstChild) {
+      answerButtons.removeChild(answerButtons.firstChild);
+    }
+  }
