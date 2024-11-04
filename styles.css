@@ -5,5 +5,13 @@ body {
     align-items: center;
     height: 100vh;
     background: lightgrey;
-  }
-  
+}
+
+.quiz-container {
+    text-align: center;
+    background-color: beige;
+    padding: 20px;
+    border-radius: 10px;
+    width: 350px;
+    box-shadow: 0px 4px 10px rgba(red, green, blue, alpha);
+}
