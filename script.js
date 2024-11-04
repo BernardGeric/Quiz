@@ -39,3 +39,21 @@ const questions = [
       ]
     }
   ];
+
+startButton.addEventListener('click', startQuiz);
+nextButton.addEventListener('click', () => {
+currentQuestionIndex++;
+setNextQuestion();
+});
+restartButton.addEventListener('click', restartQuiz);
+
+function startQuiz() {
+    startButton.classList.add('hide');
+    shuffledQuestions = questions.sort(() => Math.random() - 0.5);
+    currentQuestionIndex = 0;
+    score = 0;
+    scoreElement.classList.remove('hide');
+    scoreValue.textContent = score;
+    questionContainer.classList.remove('hide');
+    setNextQuestion();
+}
