@@ -57,3 +57,8 @@ function startQuiz() {
     questionContainer.classList.remove('hide');
     setNextQuestion();
 }
+
+function setNextQuestion() {
+    resetState();
+    showQuestion(shuffledQuestions[currentQuestionIndex]);
+}
