@@ -19,7 +19,7 @@ body {
 .btn-container {
     margin-top: 15px;
 }
- 
+
 .btn {
     margin: 5px;
     padding: 10px;
@@ -27,4 +27,8 @@ body {
     cursor: pointer;
     border: none;
     border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: aquamarine;
 }
