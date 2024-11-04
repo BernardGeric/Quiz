@@ -83,3 +83,21 @@ function showQuestion(question) {
       answerButtons.removeChild(answerButtons.firstChild);
     }
   }
+
+  function selectAnswer(e) {
+    const selectedButton = e.target;
+    const correct = selectedButton.dataset.correct;
+    if (correct) {
+      score++;
+      scoreValue.textContent = score;
+    }
+    Array.from(answerButtons.children).forEach(button => {
+      setStatusClass(button, button.dataset.correct);
+    });
+    if (shuffledQuestions.length > currentQuestionIndex + 1) {
+      nextButton.classList.remove('hide');
+    } else {
+      restartButton.classList.remove('hide');
+      scoreElement.innerHTML = `Final Score: ${score}/${questions.length}`;
+    }
+  }
