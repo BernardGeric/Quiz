@@ -15,3 +15,16 @@ body {
     width: 350px;
     box-shadow: 0px 4px 10px rgba(red, green, blue, alpha);
 }
+
+.btn-container {
+    margin-top: 15px;
+}
+ 
+.btn {
+    margin: 5px;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+}
