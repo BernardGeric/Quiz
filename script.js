@@ -115,4 +115,8 @@ function showQuestion(question) {
     element.classList.remove('correct');
     element.classList.remove('wrong');
   }
-  
+
+  function restartQuiz() {
+    restartButton.classList.add('hide');
+    startQuiz();
+  }
